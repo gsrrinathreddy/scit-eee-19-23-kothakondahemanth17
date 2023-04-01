@@ -13,6 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import {Link} from 'react-router-dom';
+import Hemanth from '../../Assets/Hemanth.png'
 const pages = ['Aboutus', 'Skills', 'Hobbies','Qualifications'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -130,7 +131,7 @@ function Navbar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Hemanth" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Hemanth" src={Hemanth}/>
               </IconButton>
             </Tooltip>
             <Menu
